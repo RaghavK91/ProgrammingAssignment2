@@ -1,7 +1,11 @@
-## Put comments here that give an overall description of what your
-## functions do
+## The objective of the code is to cache the inverse of the matrix assuming that the given matrix is invertible.
+## Two functions are written to achieve this objective
 
-## Write a short comment describing this function
+## The first function makeCachematrix creates a special matrix, which contains a list that contains functions to 
+## set the value of the matrix
+## get the value of the matrix
+## set the inverse of the matrix
+## get the inverse of the matrix
 
 makeCacheMatrix <- function(x = matrix()) {
  m <- NULL
@@ -19,7 +23,10 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## The function written below calculates the inverse of the matrix created using the above function. It checks to see whether the inverse is already calculated, else
+## cacheSolve function 1. calculates the inverse of the matrix
+## 2. displays the inverse of the matrix
+## 3. caches the inverse using the setinverse function.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
